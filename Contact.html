@@ -1,28 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joël Dierckx - Startpagina</title>
+    <title>Joël Dierckx - Contact</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Serif%20Pro">
     <meta name="author" content="Joël Dierckx">
-    
+    <style>
+        body {
+            background-color: #7d7a02;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background: #7d7a02;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+        }
+    </style>
 </head>
+
 <body>
-    <!-- Hoe kan een werkgever jou bereiken
-Mail
-Linked-in
-Formulier
-…
+    <div class="box">
+        <div class="menubalk">
+            <div class="topL">
+                <!-- linksboven -->
+            </div>
+            <div class="menu">
+                <!-- menu -->
+                <ul>
+                    <li><a class="index" href="index.html">
+                            <div>
+                                <p>Startpagina</p>
+                            </div>
+                        </a></li>
+                    <li><a class="cv" href="CV.html">
+                            <div>
+                                <p>CV</p>
+                            </div>
+                        </a></li>
+                    <li><a class="hobbies" href="Hobby.html">
+                            <div>
+                                <p>Hobby's</p>
+                            </div>
+                        </a></li>
+                    <li><a class="ervaring" href="Ervaring.html">
+                            <div>
+                                <p>Ervaring</p>
+                            </div>
+                        </a></li>
+                    <li><a class="contact" href="Contact.html">
+                            <div>
+                                <p>Contact</p>
+                            </div>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contentbalk">
+            <div class="topR">
+                <!-- centraalboven -->
+            </div>
+            <div class="mid">
+                <!-- midden -->
+                <h1 class="paginatittel">Contact</h1>
 
-Voorzie een formulier met onderstaande velden, ook al kan je dit nog niet laten werken. Maak dit formulier zo volledig mogelijk en voorzie de juiste input types. 
+                <div class="contentboxL" style="background-image: url(Afbeeldingen/extra-kunnen-achtergrond.jpg);">
+                    <div class="backgroundimg">
+                        <!-- contenttab -->
 
-Naam 
-E-mailadres
-Onderwerp
-Tekstveld voor de vraag (textarea) -->
+                        <div class="foto">
+                            <!-- foto -->
+                            <img class="frontimg" src="Afbeeldingen/foto.jpg" alt="">
+                        </div>
+                        <div class="tekstblok">
+                            <div class="tekstvak">
+                                <!-- tekst -->
+                                <h2>Contact</h2>
+                                <p>Naam: Joël Dierckx <br>
+                                </p>
+                                <p>Telefoon:<a href="tel:0478 01 27 80">0478 01 27 80</a> <br>
+                                    Email:<a href="mailto:joeldierckx@gmail.com">joeldierckx@gmail.com</a> <br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentboxR" style="background-image: url(Afbeeldingen/extra-kunnen-achtergrond.jpg);">
+                    <div class="backgroundimg">
+                        <!-- contenttab -->
+                        <div class="tekstblok">
+                            <div class="tekstvak">
+                                <!-- tekst -->
+                                <h2>Formulier</h2>
+                                <form action="https://tm-statweb.be/forms.php" method="post">
+                                    <div>
+                                        <label for="naam">Naam:<br><input type="text" id="naam" name="naam"
+                                                required></label>
+                                    </div>
+                                    <div>
+                                        <label for="E-mailadres">E-mailadres: <br><input type="email" id="E-mailadres"
+                                                name="E-mailadres" required></label>
+                                    </div>
+                                    <div>
+                                        <label for="onderwerp">Onderwerp: <br><select name="onderwerp" id="onderwerp">
+                                                <option value="Kennis" selected="selected">Kennis</option>
+                                                <option value="Jobaanbod">Jobaanbod</option>
+                                                <option value="3-modellering">3-modellering</option>
+                                                <option value="Geschiedenis">Geschiedenis</option>
+                                                <option value="gamedesign">gamedesign</option>
+                                                <option value="contact">contact</option>
+                                                <option value="Projecten">Projecten</option>
+                                                <option value="Andere">Andere</option>
+                                            </select></label>
+                                    </div>
+                                    <div><label for="boodschap">Geef hier je boodschap in: <br></label>
+                                        <textarea id="boodschap" name="boodschap" rows="8"
+                                            placeholder="Schrijf hier je boodschap..." required></textarea>
+                                    </div>
+                                    <div><input type="submit" value="Verzenden"></div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="foto">
+                            <!-- foto -->
+                            <!-- <img  class="frontimg" src="Afbeeldingen/HistorischDocument.jpg" alt=""> -->
+                            <iframe class="frontimg"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2493.3299321697627!2d4.9463329156285365!3d51.323451079605334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6b3d444a4518f%3A0x3e4f5b390724fd71!2sGrote%20Markt%2C%202300%20Turnhout!5e0!3m2!1sen!2sbe!4v1667777743600!5m2!1sen!2sbe"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
 
-
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

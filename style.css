@@ -4,19 +4,28 @@
     font-family: "Source Serif Pro", sans-serif;
 }
 
-html, body,.mid{
-    height: 100%;
+html, body{
+    height: fit-content;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+html{
+    overflow-y: auto;
+}
+.mid{
+    height:fit-content;
 }
 
 .box{
     height: 100%;
+ 
     display: flex;
 }
 .menubalk{
 float: left;
 max-width: 200px;
 min-width: 150px;
-height: 100%;
+height: auto;
 }
 
 .contentbalk{
@@ -39,6 +48,10 @@ height: 100%;
     background-color: #ad050a;
     height: 100%;
     width: 100%;
+    overflow-y: visible;
+}
+.bottom{
+    height: 10px;
 }
 div.menu ul{
     width: 80%;
@@ -64,20 +77,20 @@ div.menu ul li a div{
     border-style: solid;
     border-color: black;
 }
-a.index div,
-a.Navigatie div{
+.index div,
+.Navigatie div{
     background-color: #fdfa82;
 }
-a.cv div{
+.cv div{
     background-color: #fcf843;
 }
-a.hobbies div{
+.hobbies div{
     background-color: #fbf404;
 }
-a.ervaring div{
+.ervaring div{
     background-color: #bcb822;
 }
-a.contact div{
+.contact div{
     background-color: #7d7a02;
 }
 
@@ -92,13 +105,25 @@ div.menu ul li a div:hover{
 }
 
 .contentboxL{
-    height: 70%;
-    width: 85%;
+    height: 70vh;
+    width: 95%;
     border: 20px,solid,black;
     border-style: solid;
     border-radius: 5px;
     background-size: 100%;
     padding: 0%;
+    margin-bottom: 60px;
+}
+
+.contentboxR{
+    height: 70vh;
+    width: 95%;
+    border: 20px,solid,black;
+    border-style: solid;
+    border-radius: 5px;
+    background-size: 100%;
+    margin-bottom: 60px;
+    margin-left: 4.5%;
 }
 
 .backgroundimg{
@@ -121,6 +146,17 @@ text-align: center;
 overflow: hidden;
 border-radius: 5px;
 }
+div.contentboxR div.foto{
+    float: left;
+    width: 35%;
+    height: 80%;
+    margin: 5%;
+    margin-right: 2.5%;
+    /* background-color: #ad050a; */
+    text-align: center;
+    overflow: hidden;
+    border-radius: 5px;
+    }
 
 .frontimg{
     height: 100%;
@@ -129,27 +165,84 @@ border-radius: 5px;
 
 div.contentboxL div.tekstblok{
 float: left;
-width: 40%;
+width: 50%;
 height: 80%;
 margin: 5%;
 margin-left: 2.5%;
 background-color: #ad050a;
 border-radius: 5px;
-overflow: hidden;
+overflow-y: auto;
+overflow-x: hidden;
 }
+div.contentboxR div.tekstblok{
+    float: left;
+    width: 50%;
+    height: 80%;
+    margin: 5%;
+    margin-left: 2.5%;
+    background-color: #ad050a;
+    border-radius: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    }
+/* scrolbars */
+::-webkit-scrollbar {
+    width: 20px;
+    background-color:#ad050a;
+  }
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    background-color: #ad050a;
+  }
+/* ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background:  #fdfa82;
+   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  } */
+
+div.contentboxL div.tekstblok::-webkit-scrollbar,div.contentboxR div.tekstblok::-webkit-scrollbar {
+    width: 14px;
+    background-color:#ad050a;
+    border-radius: 5px;
+  }
+div.contentboxL div.tekstblok::-webkit-scrollbar-track,div.contentboxR div.tekstblok::-webkit-scrollbar-track {
+    border-radius: 5px;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    background-color: #ad050a;
+  }
+  /* div.contentboxL div.tekstblok::-webkit-scrollbar-thumb {
+   border-radius: 5px;
+    background:  #fdfa82;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  } */
+
+
 .tekstvak{
     width: 80%;
     margin: auto;
-    height: 80%;
-    margin-top: 10%;
+    height: 90%;
+    margin-top: 5%;
 }
 
+h1{
+    font-size: 36px;
+}
 h2{
     padding-bottom: 5px;
     font-weight: bolder;
 }
+h3{
+    font-style: italic;
+    text-decoration: overline;
+}
 div.tekstvak p{
 padding-left: 10px;
+padding-bottom: 10px;
 }
 div.tekstvak ul{
     padding-left: 30px;
@@ -159,3 +252,17 @@ div.tekstvak ul{
 div.tekstvak ul li{
 padding-bottom: 10px;
 }
+
+ol{
+    padding-left: 30px;
+}
+ol li{
+    padding-top: 10px;
+}
+
+li a,p a{
+    color: black;
+    text-decoration: underline;
+    text-decoration-style:dotted ;
+}
+
