@@ -1,0 +1,161 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Source Serif Pro", sans-serif;
+}
+
+html, body,.mid{
+    height: 100%;
+}
+
+.box{
+    height: 100%;
+    display: flex;
+}
+.menubalk{
+float: left;
+max-width: 200px;
+min-width: 150px;
+height: 100%;
+}
+
+.contentbalk{
+float: left;
+flex: 1;
+height: 100%;
+}
+
+.topL,
+.topR{
+    min-height: 100px;
+    max-height: 250px;
+}
+
+.topR{
+    background:#ad050a;
+}
+
+.menu{
+    background-color: #ad050a;
+    height: 100%;
+    width: 100%;
+}
+div.menu ul{
+    width: 80%;
+    height: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    list-style: none;
+    text-align: center;
+}
+div.menu ul li {
+    width: 100%;
+    padding-bottom: 40%;
+ 
+}
+div.menu ul li a div{
+    /* background-color: #fdfa82; */
+    padding-bottom: 10%;
+    padding-top: 10%;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+}
+a.index div,
+a.Navigatie div{
+    background-color: #fdfa82;
+}
+a.cv div{
+    background-color: #fcf843;
+}
+a.hobbies div{
+    background-color: #fbf404;
+}
+a.ervaring div{
+    background-color: #bcb822;
+}
+a.contact div{
+    background-color: #7d7a02;
+}
+
+div.menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+div.menu ul li a div:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+.contentboxL{
+    height: 70%;
+    width: 85%;
+    border: 20px,solid,black;
+    border-style: solid;
+    border-radius: 5px;
+    background-size: 100%;
+    padding: 0%;
+}
+
+.backgroundimg{
+    backdrop-filter:  blur(2px);
+    height: 100%;
+    width: 100%;
+}
+
+.paginatittel{
+    padding: 20px;
+}
+div.contentboxL div.foto{
+float: left;
+width: 35%;
+height: 80%;
+margin: 5%;
+margin-right: 2.5%;
+/* background-color: #ad050a; */
+text-align: center;
+overflow: hidden;
+border-radius: 5px;
+}
+
+.frontimg{
+    height: 100%;
+    border-radius: 5px;
+}
+
+div.contentboxL div.tekstblok{
+float: left;
+width: 40%;
+height: 80%;
+margin: 5%;
+margin-left: 2.5%;
+background-color: #ad050a;
+border-radius: 5px;
+overflow: hidden;
+}
+.tekstvak{
+    width: 80%;
+    margin: auto;
+    height: 80%;
+    margin-top: 10%;
+}
+
+h2{
+    padding-bottom: 5px;
+    font-weight: bolder;
+}
+div.tekstvak p{
+padding-left: 10px;
+}
+div.tekstvak ul{
+    padding-left: 30px;
+    list-style: disc;
+}
+
+div.tekstvak ul li{
+padding-bottom: 10px;
+}
