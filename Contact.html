@@ -8,6 +8,7 @@
     <title>Joël Dierckx - Contact</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Serif%20Pro">
+    <link rel="icon" href="Afbeeldingen/favicon.ico" type="icon" sizes="16x16">
     <meta name="author" content="Joël Dierckx">
     <style>
         body {
@@ -94,14 +95,14 @@
                             <div class="tekstvak">
                                 <!-- tekst -->
                                 <h2>Formulier</h2>
-                                <form action="https://tm-statweb.be/forms.php" method="post">
+                                <form action="https://tm-statweb.be/forms.php" method="post" target="_blank">
                                     <div>
                                         <label for="naam">Naam:<br><input type="text" id="naam" name="naam"
-                                                required></label>
+                                                placeholder="Jouw naam" required></label>
                                     </div>
                                     <div>
                                         <label for="E-mailadres">E-mailadres: <br><input type="email" id="E-mailadres"
-                                                name="E-mailadres" required></label>
+                                                name="E-mailadres" placeholder="voorbeeld@gmail.com" required></label>
                                     </div>
                                     <div>
                                         <label for="onderwerp">Onderwerp: <br><select name="onderwerp" id="onderwerp">
@@ -109,8 +110,8 @@
                                                 <option value="Jobaanbod">Jobaanbod</option>
                                                 <option value="3-modellering">3-modellering</option>
                                                 <option value="Geschiedenis">Geschiedenis</option>
-                                                <option value="gamedesign">gamedesign</option>
-                                                <option value="contact">contact</option>
+                                                <option value="gamedesign">Gamedesign</option>
+                                                <option value="contact">Contact</option>
                                                 <option value="Projecten">Projecten</option>
                                                 <option value="Andere">Andere</option>
                                             </select></label>
